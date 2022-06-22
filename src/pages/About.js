@@ -18,10 +18,12 @@ export default class About extends Component {
         </div>
         <div className="split right">
           <div className="centered">
-            <div className="name_title">Your Name</div>
+            <div className="name_title">Skye Jackson</div>
             <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
+            I am a rising junior computer science major at Spelman College in Atlanta, GA.
+            I love reading, traveling, coding, and learning about new cultures. I am so excited
+            to participate in the IBM Accelerate Program this Summer, and I am looking forward to
+            networking and improving both my technical and professional skills.
             </div>
           </div>
         </div>
