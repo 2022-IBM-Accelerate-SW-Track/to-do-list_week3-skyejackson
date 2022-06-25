@@ -24,7 +24,7 @@ class AddTodo extends Component {
 
   datePicker = (event) => {
     this.setState({
-      due:newDate(event).toLocaleDateString()
+      due:new Date(event).toLocaleDateString()
     });
   };
   // The handleSubmit function collects the forms input and puts it into the react state.
