@@ -21,6 +21,12 @@ class AddTodo extends Component {
       date: Date().toLocaleString('en-US')
     });
   };
+
+  datePicker = (event) => {
+    this.setState({
+      due:newDate(event).toLocaleDateString()
+    });
+  };
   // The handleSubmit function collects the forms input and puts it into the react state.
   // event.preventDefault() is called to prevents default event behavior like refreshing the browser.
   // this.props.addTodo(this.state) passes the current state (or user input and current date/time) into the addTodo function defined
@@ -34,11 +40,6 @@ class AddTodo extends Component {
         date: ""
       });
     }
-  };
-  datePicker = (event) => {
-    this.setState({
-      date:newDate(event).toLocaleDateString()
-    });
   };
   render() {
     return (
@@ -62,7 +63,7 @@ class AddTodo extends Component {
             id="new-item-date"
             label="Due Date"
             value={this.state.due}
-            onChange={datePicker()}
+            onChange={this.datePicker}
             renderInput={(params) => <TextField {...params} />}
           />
         </LocalizationProvider>
