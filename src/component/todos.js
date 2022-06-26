@@ -12,7 +12,7 @@ import { Card, Grid, ListItemButton, ListItemText, Checkbox} from "@mui/material
 const Todos = ({ todos, deleteTodo }) => {
   const todoList = todos.length ? (
     todos.map((todo) => {
-      let color = "white"
+      let color = "pink"
       if (new Date()>= new Date(todo.due)){
         color = "red"
       }
