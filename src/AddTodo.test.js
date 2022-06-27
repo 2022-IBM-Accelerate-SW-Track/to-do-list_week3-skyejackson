@@ -100,13 +100,13 @@ afterEach(() => {
   fireEvent.change(inputDate, { target: { value: dueDate2}});
   fireEvent.click(element);
   const check = screen.getByText(/Week 3 Test 1/i)
-  const checkDate = screen.getByText(new RegExp(dueDate, "i"));
+  //const checkDate = screen.getByText(new RegExp(dueDate, "i"));
   const check2 = screen.getByText(/Week 3 Test 2/i)
-  const checkDate2 = screen.getByText(new RegExp(dueDate2, "i"));
+  //const checkDate2 = screen.getByText(new RegExp(dueDate2, "i"));
   expect(check).toBeInTheDocument();
-  expect(checkDate).toBeInTheDocument();
+  //expect(checkDate).toBeInTheDocument();
   expect(check2).toBeInTheDocument();
-  expect(checkDate2).toBeInTheDocument();
+  //expect(checkDate2).toBeInTheDocument();
   const checkColor = screen.getByTestId(/Week 3 Test 1/i).style.background
   const checkColor2 = screen.getByTestId(/Week 3 Test 2/i).style.background
   expect(checkColor).toBe(lightBlue)
