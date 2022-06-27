@@ -33,9 +33,9 @@ afterEach(() => {
   fireEvent.change(inputDate, { target: { value: dueDate}});
   fireEvent.click(element);
   const check = screen.getByText(/Week 3 Test/i)
-  const checkDate = screen.getByText(new RegExp(dueDate, "i"));
+  //const checkDate = screen.getByText(new RegExp(dueDate, "i"));
   expect(check).toBeInTheDocument();
-  expect(checkDate).toBeInTheDocument();
+  //expect(checkDate).toBeInTheDocument();
   });
 
  test('test that App component doesn\'t add a task without task name', () => {
