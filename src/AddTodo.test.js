@@ -110,5 +110,5 @@ afterEach(() => {
   const checkColor = screen.getByTestId(/Week 3 Test 1/i).style.background
   const checkColor2 = screen.getByTestId(/Week 3 Test 2/i).style.background
   expect(checkColor).toBe(lightBlue)
-  expect(checkColor2).toBe(red)
+  expect(checkColor2).toBe(FF0000)
  });
